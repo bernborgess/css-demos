@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="5animationProperties.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>The animaiton-name Property</h3>
+	<p>
+		<b>animation-name</b> property defines which animation to use.
+		In this example, the name of the animation is set to <b>colorchange</b>, which 
+		matches the defined keyframes.
+	</p>
+	<code>
+		div {
+			animation-name: colorchange;
+			animation-duration: 5s;
+		}
+		@keyframes colorchange {
+			from {width: 0px;}
+			to {width: 100px;}
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1"></div>
+	<p>
+		The <b>animation-duration</b> property specifies the duration of the selected 
+		animation in seconds.
+	</p>
+
+	<p>
+		If the animation name does not match any keyframe rule, the 
+		animation <b>will not execute.</b>
+	</p>
+	<h3>Animation Properties</h3>
+	<p>
+		The animation-timing-function specifies the speed curve of an animation. It can have the following values:
+	</p>
+	<ul>
+		<li><b>ease</b> - specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+		<li><b>linear</b> - specifies an animation with the same speed from start to end</li>
+		<li><b>ease-in</b> - specifies an animation with a slow start</li>
+		<li><b>ease-out</b> - specifies an animation with a slow end</li>
+		<li><b>ease-in-out</b> - specifies an animation with a slow start and end</li>
+		<li><b>cubic-bezier(n,n,n,n)</b> - lets you define your own values in a cubic-bezier function</li>
+	</ul>
+	<h4>The CSS syntax looks like this:</h4>
+	<code>
+		animation-timing-function: linear;
+	</code>
+	<p>
+		animation-delay - defines the delay before an animation starts. The CSS syntax looks like this:
+	</p>
+	<code>
+		animation-delay: 2s;
+	</code>
+	<p>
+		The animation-delay and animation-duration values can be defined in seconds(s) or miliseconds(ms).
+	</p>
+	<br><br><br>
+	<h3>More Animation Properties</h3>
+	<p>
+		The <b>animation-iteration-count</b> property determines the number of times an animation repeats.
+	</p>
+	<p>
+		For example, you can set the animation to run 5 times:
+	</p>
+	<code>
+		animation-iteration-count: 5;
+	</code>
+	<p>
+		To make the animation repeat <b>forever</b>, just the <b>infinite</b> value:
+	</p>
+	<code>
+		animation-iteration-count: infinite;
+	</code>
+	<p>
+		The animation-direction indicates how the keyframe should be applied.
+		The values can be set as:
+	</p>
+	<ul>
+		<li><b>normal</b> - the default value, which means it plays forward from 0 % to 100%.</li>
+		<li><b>reverse</b> - plays the keyframe in an opposite direction from 100 % to 0%</li>
+		<li><b>alternate</b> - the animation first runs forward, then backward, then forward.</li>
+		<li><b>alternate-reverse</b> - the animation first runs backward, then forward, then backward.</li>
+	</ul>
+	<p>
+		If you use 0 or a negative number for the animation-iteration-count, 
+		the animation will never start.
+	</p>
+	<br><br><br>
+	<h3>animation Property</h3>
+	<p>
+		Consider the following example:
+	</p>
+	<code>
+		div {
+			animation-name: colorchange;
+			animation-duration: 3s;
+			animation-timing-function: ease-in;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: reverse;
+		}
+	</code>
+	<p>
+		A single <b>animation</b> property can be used to achieve the same result as the 
+		above code:
+	</p>
+	<code>
+		div {
+			animation: colorchange 3s ease-in 1s infinite reverse;
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result2"></div>
+	<p>
+		The order in which each property is declared in the shorthand declaration is important and cannot be altered, or the animation will not work properly.
+	</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+	font-family: 'Comfortaa', cursive;
+} 
+
+.div1{
+	width: 100%;
+	height: 100px;
+	background-image: url("https://image.shutterstock.com/image-vector/vector-pixel-art-train-side-260nw-700755364.jpg");
+	background-repeat: repeat-x;
+}
+
+.div2{
+	width: 150px;
+	height: 500px;
+	background-image: url("https://img.freepik.com/free-vector/seamless-chain-pattern-black-silver-metallic-chain-texture-isolated-white-background_257312-1399.jpg?size=338&ext=jpg");
+	background-repeat: repeat-y;
+}

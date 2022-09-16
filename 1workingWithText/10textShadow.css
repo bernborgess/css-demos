@@ -1,0 +1,16 @@
+h1 {
+/* 	In the example we created a shadow
+	using the following parameters:
+	5px - the X-coordinate
+	2px - the Y-coordinate
+	4px - the blur radius
+	grey - the color of the shadow */
+	color: blue;
+	font-size: 30pt;
+	text-shadow: 5px 2px 4px grey;
+}
+
+h2 {
+	font-size: 20pt;
+	text-shadow: rgba(0,0,255,1) -1px -2px 0.5em;
+}

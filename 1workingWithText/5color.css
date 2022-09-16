@@ -1,0 +1,11 @@
+h1 {
+	color: #0000FF;
+}
+
+p {
+	color: red;
+}
+
+p.example {
+	color: green;
+}

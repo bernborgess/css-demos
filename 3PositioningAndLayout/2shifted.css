@@ -1,0 +1,18 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+p.relativeP {
+	width: 350px;
+	border: 1px black solid;
+	position: fixed;
+}
+
+span {
+	background-color: green;
+	color: white;
+	position: relative;
+	top: 150px;
+	left: 5px;
+}

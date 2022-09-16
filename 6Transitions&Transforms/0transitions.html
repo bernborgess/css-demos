@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="0transitions.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>CSS3 Transitions</h3>
+	<p>
+		CSS3 transitions allow us to change from one property value to another over a given duration.
+	</p>
+	<ul>
+		<li><b>transition-property</b> - specifies the property to be transitioned</li>
+		<li><b>transition-duration</b> - specifies the duration over which transitions should occur</li>
+		<li><b>transition-timing-function</b> - specifies how the pace of the transition changes over its duration</li>
+		<li><b>transition-delay</b> - specifies a delay (in seconds) for the transition effect</li>
+	</ul>
+	<p>
+		In the example below, we set the transition property to transform, with a duration of 5 seconds, and with an ease-in timing function that specifies a transition effect with a slow start.
+	</p>
+	<code>
+		transition: transform 5s ease-in;
+	</code>
+	<p>
+		Transition effects can be applied to a wide variety of CSS properties, including background-color, width, height, opacity, and many more.
+	</p>
+	<h3>The Transition Property</h3>
+	<p>
+		In the example below, the div element has width and height of 50px, with a green background. We specified a transition effect for the width property, with a duration of 3 seconds:
+	</p>
+	<h4>The CSS will look like this:</h4>
+	<code>
+		div {
+			width: 50px;
+			height: 50px;
+			background: #32CD32;
+			transition: width 3s;
+		}
+		div:hover {
+			width: 250px;
+		}
+	</code>
+	<p>
+		If you hover over the div element, it will move from left to right.
+	</p>
+	<div id="result1"></div>
+	<p>
+		When the cursor is moused out of the element, it will gradually change back to its original style.
+	</p>
+	<h3>transition-timing-function</h3>
+	<p>
+		The transition-timing-function property specifies the speed curve of the transition effect.
+It can have the following values:
+	</p>
+	<ul>
+		<li><b>ease</b> - the animation starts slowly, then accelerates quickly.</li>
+		<li><b>ease-in</b> - starts slowly, then accelerates, and stops abruptly.</li>
+		<li><b>ease-out</b> - starts quickly, but decelerates to a stop.</li>
+		<li><b>ease-in-out</b> - similar to ease, but with more subtle acceleration and deceleration.</li>
+		<li><b>linear</b> - constant speed throughout the animation; often best for color or opacity changes.</li>
+	</ul>
+	<p>
+		Finally, we have cubic-bezier(), which allows you to define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1.
+	</p>
+	<code>
+		transition-timing-function: cubic-bezier(0,0,1,1);
+	</code>
+	<p>
+		If no timing function is specified, the default value is ease.
+	</p>
+	<div id="result2"></div>
+</body>
+</html>

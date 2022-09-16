@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="2transformOrigin.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>transform-origin</h3>
+	<p>
+		The transform-origin property allows you to change the position of transformed elements. The default value for the property is 50% 50%, which corresponds to the center of the element.
+	</p>
+	<p>
+		In the example below, we use the transform-origin property together with transform-rotate. The origin of the x-axis (horizontal) is set to 25% from the left. The origin for the y-axis (vertical) is set to 75% from above.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		div.empty-div {
+			position: relative;
+			height: 100px;
+			width: 100px;
+			margin: 30px;
+			padding: 10px;
+			border: 1px solid black;
+		}
+		div.green-div {
+			padding: 50px;
+			position: absolute;
+			background-color: #8bc34a;
+			border: 1px solid white;
+			transform: rotate(15deg);
+			transform-origin: 25% 75%;
+			-webkit-transform: rotate(15deg);
+			-webkit-transform-origin: 25% 75%;
+		}
+	</code>
+	<h4>Result:</h4>
+	<div class="empty-div">
+		<div class="green-div"></div>
+	</div>
+	<p>
+		0 0 is the same value as top left, and 100% 100% is the same value as bottom right.
+The transform-origin property must be used together with the transform property.
+	</p>
+	<h3>The translate() Method</h3>
+	<p>
+		The translate() method moves an element from its current position (according to the parameters given for the x-axis and the y-axis). Positive values will push an element down and to the right of its default position, while negative values will pull an element up and to the left of its default position.
+	</p>
+	<p>
+		In this example below, the div element is moved 100px to the right and 50px down:
+	</p>
+	<code>
+		div {
+			padding: 50px;
+			position: absolute;
+			background-color: #32CD32;
+			transform:translate(100px,50px);
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result3"></div>
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
+	<p>
+		An element can also be moved by setting the margins or by positioning the element, although translate is a better choice for animating elements.
+	</p>
+	<h3>The skew() Method</h3>
+	<p>
+		The skew() method skews an element along the x-axis and the y-axis by the given angles.
+	</p>
+	<p>
+		The following example skews the &lt;div&gt; element by 30 degrees along the X-axis:
+	</p>
+	<code>
+		transform: skew(30deg);
+	</code>
+	<h4>Result:</h4>
+	<h4>This div element is not skewed.</h4>
+	<div id="result4"></div>
+	<h4>This div element is skewed by 30 degrees.</h4>
+	<div id="result5"></div>
+	<p>
+		If the second parameter is not specified, it has a zero value.
+	</p>
+</body>
+</html>

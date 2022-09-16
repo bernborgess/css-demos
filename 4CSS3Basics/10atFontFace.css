@@ -1,0 +1,19 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+code {
+	white-space: pre-line;
+}
+@font-face {
+	font-family: Delicious;
+	src: url('Delicious-Roman.otf');
+}
+@font-face {
+	font-family: Delicious;
+	font-weight: bold;
+	src: url('Delicious-Bold');
+}
+h1 {
+	font-family: Delicious, sans-serif;
+}

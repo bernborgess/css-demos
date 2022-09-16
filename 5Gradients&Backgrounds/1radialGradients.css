@@ -1,0 +1,35 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+	padding-bottom: 100px;
+} 
+code {
+	white-space: pre-line;
+	margin: 10px;
+}
+
+.r {
+	height: 150px;
+	width: 200px;
+	color: #FFF;
+	margin: 10px;
+}
+
+#result1 {
+	background: radial-gradient(green,yellow,blue);	
+}
+#result2 {
+	background: radial-gradient(circle,green,yellow,blue);
+}
+
+#result3 {
+	background: radial-gradient(at top left,green,yellow,blue);	
+}
+
+#result4 {
+	background: radial-gradient(green 5%,yellow 15%,blue 60%);	
+}
+
+#result5 {
+	background: radial-gradient(circle, green 40%, yellow 50%, blue 70%);
+}

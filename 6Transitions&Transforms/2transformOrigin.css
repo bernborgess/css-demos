@@ -1,0 +1,45 @@
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 110%;
+  padding-bottom: 400px;
+}
+code {
+  white-space: pre-line;
+}
+.empty-div {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.green-div {
+  padding: 50px;
+  position: absolute;
+  background-color: #8bc34a;
+  border: 1px solid white;
+  transform: rotate(15deg);
+  transform-origin: 25% 75%;
+  -webkit-transform: rotate(15deg);
+  -webkit-transform-origin: 25% 75%;
+}
+#result3 {
+  padding: 50px;
+  position: absolute;
+  background-color: #32cd32;
+  transform: translate(100px, 50px);
+}
+#result4 {
+  width: 100px;
+  height: 100px;
+  background-color: #32cd32;
+}
+#result5 {
+  position: relative;
+  left:50px;
+  width: 100px;
+  height: 100px;
+  background-color: #32cd32;
+  transform: skew(30deg);
+}

@@ -1,0 +1,52 @@
+table, th, td {
+	border-style:solid;
+}
+
+td.top {
+	vertical-align: top;
+}
+
+td.middle {
+	vertical-align: middle;
+}
+
+td.bottom {
+	vertical-align: bottom;
+}
+
+span.baseline {
+	vertical-align: baseline;
+}
+
+span.sub {
+	vertical-align: sub;
+}
+
+span.super {
+	vertical-align: super;
+}
+
+span.pixel {
+	/* Instead of px values, you can use pt (points),
+	cm (centimeters) and % (percentage) values. */
+	vertical-align: -10px;
+}
+
+.main {
+	height: 150px;
+	width: 400px;
+	background-color: lightskyblue;
+	display: inline-table;
+}
+
+.paragraph {
+	display: table-cell;
+	vertical-align: middle;
+}
+/* 	display: inline-table; and
+	display: table-cell; styling rules are
+	applied to make the vertical-align 
+	property work with divs. */
+
+
+

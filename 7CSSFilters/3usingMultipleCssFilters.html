@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="3usingMultipleCssFilters.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Using Multiple CSS Filters</h3>
+	<p>
+		Multiple CSS filters can be used together
+		by separating them with spaces.
+	</p>
+	<p>
+		The following code demonstrates the use of the 
+		<b>blur</b> and the <b>hue-rotate</b> functions:
+	</p>
+	<img id="original" src="http://www.sololearn.com/images/tree.jpg"/>
+	<code>
+		#result1 {
+			filter: blur(5px) hue-rotate(180deg);
+		}
+	</code>
+	<img id="result1" src="http://www.sololearn.com/images/tree.jpg"/>
+	<h4>Another example:</h4>
+	<code>
+		#result2 {
+			filter: saturate(30%) drop-shadow(5px 9px 2px gray) blur(1px);
+		}
+	</code>
+	<img id="result2" src="http://www.sololearn.com/images/tree.jpg"/>
+	<h4>Another example from the 19th century:</h4>
+	<code>
+		#result3 {
+			filter: brightness(150%) sepia(100%);
+		}
+	</code>
+	<img id="result3" src="http://www.sololearn.com/images/tree.jpg"/>
+</body>
+</html>

@@ -1,0 +1,15 @@
+p.normal {
+	word-spacing: normal;
+}
+
+p.px {
+	word-spacing: 30px;
+}
+
+p.positive {
+	word-spacing: 20px;
+}
+
+p.negative {
+	word-spacing: -5px;
+}

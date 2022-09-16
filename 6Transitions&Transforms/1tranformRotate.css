@@ -1,0 +1,37 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+	padding-bottom: 400px;
+} 
+code {
+	white-space: pre-line;
+}
+#result1 {
+	width: 200px;
+	height: 100px;
+	margin-top: 30px;
+	background-color: #32CD32;
+}
+#result2 {
+	width: 200px;
+	height: 100px;
+	margin-top: 30px;
+	background-color: #32CD32;
+	transform: rotate(10deg);
+}
+div.positive {
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: #32CD32;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+div.negative {
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: #32CD32;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}

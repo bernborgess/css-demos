@@ -1,0 +1,85 @@
+body {
+	/* background-color:firebrick;*/
+	/* background-coor: maroon; */
+	background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX30220311.jpg");
+	/* background-image: url("https://cdn.pixabay.com/photo/2017/10/01/19/12/pattern-2806684_1280.jpg"); */
+	background-size: 500px;
+	font-family: 'Zilla Slab', serif;
+	max-width: 1920px;
+	font-size: 130%;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	
+	color: snow;
+}
+
+h3 {
+	text-align: center;
+	background-color: black;
+	background-image: url("https://cdn1.vectorstock.com/i/1000x1000/96/15/seamless-pattern-light-blue-bg-vector-11379615.jpg");
+	border-style:double;
+	border-radius: 10%;
+	color: royalblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 300px;
+	font-family: 'Reggae One', cursive;
+	position: relative;
+	left: 70px;
+}
+
+h4 {
+	color:floralwhite;
+	text-shadow: rgb(0, 0, 255) -1px -2px 0.5em;
+}
+
+#board {
+	background-color: #333333;
+	padding: 40px;
+	border-style:groove;
+	border-width: 8px;
+	border-radius: 3%;
+	max-width: 500px;
+	max-height: 600px;
+	position: relative;
+	/* left: 100px; */
+	top: 20px;
+
+}
+
+ul {
+	list-style: circle inside url("https://gospodaretsva.com/wp-content/uploads/2013/12/bullet_triangle_blue.png");
+}
+
+li {
+	padding: 0.5%;
+	font-family: 'Major Mono Display', monospace;
+}
+
+fun {
+	font-family: 'Truculenta', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: snow;
+}
+
+a:visited {
+	color: snow;
+}
+
+a:hover {
+	color: blueviolet;
+}
+
+button {
+	background-color: brown;
+	size: 170%;
+	position: relative;
+	left: 200px;
+	border: solid maroon 4px;
+}

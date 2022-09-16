@@ -1,0 +1,25 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+p.floatRight {
+	font-size: 30px;
+}
+
+img.nyan {
+	max-height: 180px;
+	float: right;
+}
+
+img.bernie {
+	float: left;
+	width: 120px;
+	margin-right: 10px;
+}
+
+p.floatLeft {
+	width: 180px;
+	float: left;
+	font-size: 18px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="10atFontFace.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>The @font-face Rule</h3>
+	<p>
+		The <b>@font-face</b> rule allows custom fonts to be 
+		loaded into a webpage.
+	</p>
+	<p>
+		With the help of this rule, designs are no longer 
+		limited to the fonts that are installed on a user's
+		computer.
+	</p>
+	<p>
+		In Internet Explorer 8 and earlier , the URL must
+		point to an <b>Embedded OnpenType</b> (eot) file, while
+		Firefox, Chorme, etc. support <b>True Type Fonts</b>
+		(ttf) fonts and <b>OpenType Fonts</b> (otf).
+	</p>
+	<p>
+		In the <b>@font-face</b> rule, you must first define
+		a name for the font (e.g., myFirstFont), and
+		then point to the font file.
+	</p>
+	<br>
+	<h3>Using the @font-face Rule</h3>
+	<p>
+		Each form of the font family myst be declared
+		using the <b>@font-face</b> rule. In the example below, a
+		custom font called "Delicious" is loaded and used
+		for the heading.
+	</p>
+	<h4>The HTML:</h4>
+	<code>
+		&lt;h1&gt;This is Our Headline&lt;/h1&gt;
+	</code>
+	<h4>The CSS:</h4>
+	<code>
+		@font-face {
+			font-family: Delicious;
+			src: url('Delicious-Roman.otf');
+		}
+		@font-face {
+			font-family: Delicious;
+			font-weight: bold;
+			src: url('Delicious-Bold');
+		}
+		h1 {
+			font-family: Delicious, sans-serif;
+		}
+	</code>
+	<p>
+		Internet Explorer has a built-in bug when multiple
+		<b>@font-face</b> rules are defined. Using <b>#iefix</b> as
+		shown below fixes the problems:
+	</p>
+	<code>
+		@font-face {
+			font-family: Delicious;
+			src: url('Delicious-Roman.ttf');
+			src: url('Delicious-Roman.eot?#iefix');
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1" class="result">
+		<h1>This is Our Headline</h1>
+	</div>
+	<p>
+		The question mark fools IE into htinking the 
+		rest of the string is a query string and loads
+		just the EOT file. The other browser follow
+		the spec and select the format they need, 
+		based on the src cascade.
+	</p>
+	<br><br><br><br>
+</body>
+</html>

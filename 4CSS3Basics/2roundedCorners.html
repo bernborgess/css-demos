@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="2roundedCorners.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Rounded Corners</h3>
+	<h4>The border-radius Property</h4>
+	<p>
+		With CSS3, you can give any element "rounded corners"
+		by using the <strong>border-radius</strong> property.
+	</p>
+	<code>
+		border-radius: 20px;
+		background-color: green;
+		color: white;
+		padding: 50px;
+	</code><br><br>
+	
+	<div id="roundedCorners">
+		Rounded Corners
+	</div>
+	<br>
+
+	<code>
+		border-radius: 0 0 20px 20px;
+	</code><br><br>
+
+	<div id="onlyBottomRounded">
+		Only Bottom Rounded
+	</div>
+	<br><br>
+
+	<h3>Creating a Circle</h3>
+	<p>
+		A rectangle can be turned into a circle using only CSS.
+		To create a circle, the border radius should be half of
+		the height and the width.
+	</p>
+	<p>
+		The rectangle in the example below has a width and height 
+		of 200px. By setting the border radius to 100px, the corners 
+		will be rounded to form a circle.
+	</p>
+	<code>
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		background-color: limegreen;
+		color: white;
+	</code><br>
+
+	<div id="myCircle">
+	</div>
+
+	<br><br><br><br>
+</body>
+</html>

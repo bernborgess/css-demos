@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="5multipleBackgroundImages.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Multiple Backgrounds</h3>
+	<p>
+		The ability to have multiple background images is a new feature in CSS3.
+Multiple background images are specified using a comma-separated list of values for the background-image property. The first image will appear on the top, the last on the bottom.
+	</p>
+	<p>
+		In the example below, we have two background images: the first is a CSS logo (aligned to the bottom and right); the second is a coding image (aligned to the top-left corner).
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		#result1 {
+			width: 800px;
+			height:600px;
+			background-image: url(sololearn.png), url(julia\ set.png);
+			background-position: right bottom, left top;
+			background-repeat: no-repeat;
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1"></div>
+	<p>
+		The position of the background images can be changed, using the background-position property.
+	</p>
+	<p>
+		Multiple backgrounds can also be specified using the background: shorthand property.
+	</p>
+	<code>
+		background: url(csslogo.png) right top no-repeat,
+		url(csscode.jpg) left top no-repeat;
+	</code>
+	<br><br><br><br>
+</body>
+</html>

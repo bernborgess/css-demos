@@ -1,0 +1,24 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+
+code {
+	white-space: pre-line;
+}
+
+#result1, #result2 {
+	border-style: dotted;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+#parent p:first-child {
+	color: green;
+	text-decoration: underline;
+}
+
+#parent2 p:last-child {
+	color: green;
+	text-decoration: underline;
+}

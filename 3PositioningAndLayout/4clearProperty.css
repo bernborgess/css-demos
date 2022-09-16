@@ -1,0 +1,12 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+.floating {
+	float: right;
+}
+
+.clearing {
+	clear: both;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="0linearGradients.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Creating Linear Gradients</h3>
+	<p>
+		CSS3 gradients enable you to display smooth
+		transitions between two or more specified colors.
+		CSS3 defines two types of gradients: <b>Linear</b> and
+		<b>Radial</b>
+	</p>
+	<p>
+		To create a linear gradient, you must define 
+		at least two color stops. Color stops are the 
+		colors among which you want to render smooth 
+		transitions. You can also set a starting point and
+		a direction - or an angle - along with the gradient
+		effect.
+	</p>
+	<p>
+		In the example below, the colors blue and black
+		are used to create a linear gradient from top to 
+		bottom.
+	</p>
+	<code>
+		div {
+			float: left;
+			width: 300px;
+			height: 100px;
+			margin: 4px;
+			color: #FFF;
+			background: linear-gradient(DeepSkyBlue,Black);
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1" class="r">
+		Linear Gradient
+	</div>
+	<p>
+		You can use <b>color names, Hex values, RGB</b> or
+		<b>HSL</b> colors to define the gradient color.
+	</p>
+	<br><br><br><br>
+	<h3>Color Stops</h3>
+	<p>
+		Colors can be added one after the other, 
+		separated with a comma. The browser will then 
+		determine each color stop position.
+		In the example below, the linear gradient has
+		multiple color stops and runs from top to bottom.
+	</p>
+	<code>
+		background: linear-gradient(blue,yellow,green,pink,white);
+	</code>
+	<div id="result2" class="r">
+		Multiple Colors
+	</div>
+	<br><br><br><br><br><br>
+	<h3>Direction of the Gradient</h3>
+	<p>
+		The direction of the gradient can be changed.
+		In the example below, the first gradient starts
+		at <b>left</b> moving <b>right</b>; the second one runs from
+		<b>bottom</b> to <b>top</b>.
+	</p>
+	<code>
+		#result3 {
+			background: linear-gradient(to left,blue,green,white);
+		}
+		
+		#result4 {
+			background: linear-gradient(to bottom,blue,green,white);
+		} 
+	</code>
+	<h4>Result:</h4>
+	<div id="result3" class="r">
+		Left to Right
+	</div>
+	<div id="result4" class="r">
+		Bottom to Top
+	</div>
+	<br><br><br><br><br><br>
+	<p>
+		<b>left, right, top </b> and <b>bottom</b> are supported
+		values fro the gradient direction. You can 
+		also use their various combinations to specify direction
+		(e.g., <b>bottom right</b>)
+	</p>
+	<h3>Angle of the Gradient</h3>
+	<p>
+		As an alternative to predefined directions
+		(bottom, top, right, left, bottom right, etc.), You
+		can control the gradients's direction by specifying
+		an angle.
+	</p>
+	<p>
+		The angle is specified as an angle extending
+		between a horizontal line and the gradient line. In 
+		other words, 0deg creates a left-to right-gradient,
+		while 90deg generates a bottom-to-top gradient.
+	</p>
+	<code>
+		#result5 {
+			background: linear-gradient(to bottom left,blue,green,white);
+		}
+		
+		#result6 {
+			background: linear-gradient(100deg,blue,green,white);
+		}
+		
+	</code>
+	<div id="result5" class="r">
+		Bottom Left
+	</div>
+	<div id="result6" class="r">
+		135deg
+	</div>
+	
+	<br><br><br><br><br><br>
+	<h3>Repeating a Linear-Gradient</h3>
+	<p>
+		The <b>repeating-linear-gradient()</b> function is used
+		to repeat a linear gradient:
+	</p>
+	<code>
+		background: repeating-linear-gradient(blue,green,20px);
+
+	</code>
+	<div id="result7" class="r">
+		Repeating Gradient
+	</div>
+	<p>
+	
+	</p>
+</body>
+</html>

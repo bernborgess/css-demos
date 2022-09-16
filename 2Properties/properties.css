@@ -1,0 +1,77 @@
+body {
+	/* background-color:firebrick;*/
+	/* background-coor: maroon; */
+	background-image: url("https://image.freepik.com/free-vector/tartan-plaid-seamless-pattern-background_8130-341.jpg");
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+	text-align: center;
+	background-color: black;
+	background-image: url("https://besthqwallpapers.com/Uploads/20-3-2019/84244/thumb2-seamless-pattern-black-background-with-ornaments-black-seamless-texture-ornaments-retro-background.jpg");
+	border-style: dashed;
+	border-radius: 10%;
+	color: gold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 300px;
+	font-family: 'Plaster', cursive;
+}
+
+h4 {
+	color: brown;
+}
+
+#board {
+	background-color: white;
+	background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/072/176/small_2x/abstract-white-quilted-textured-seamless-pattern.jpg");
+	padding: 4%;
+	border-style:groove;
+	border-width: 8px;
+	border-radius: 3%;
+	max-width: 500px;
+}
+
+ul {
+	list-style: circle inside url("https://guruweba.com/modules/rating/img/rplus.png");
+}
+
+li {
+	padding: 0.5%;
+	font-family: serif;
+}
+
+fun {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: blueviolet;
+}
+
+.secret{
+	color: inherit;
+	text-decoration: inherit;
+	cursor: text;
+}
+.secret:link, .secret:visited, .secret:hover {
+	color: inherit;
+	cursor: text;
+}
+/* .secret:visited{
+	color: inherit;
+}
+.secret:hover{
+	color: inherit;
+} */

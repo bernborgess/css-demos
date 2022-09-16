@@ -1,0 +1,15 @@
+body {
+	font-family: 'Comfortaa', cursive;
+} 
+
+span {
+	border: solid 4px black;
+	margin: 20px;
+	margin-top: 50px;
+	padding: 20px;
+	cursor: help;
+}
+
+img {
+	cursor: all-scroll;
+}

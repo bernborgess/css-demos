@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="6textShadow.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>Text Shadow</h3>
+	<p>
+		The <b>text-shadow</b> property defines one or more comma-separated shadow effects, to be applied to the text content of the current element.
+	</p>
+	<p>
+		The image below shows how the text-shadow property is applied:
+	</p>
+	<div id="demo">
+		<div id="head">
+			<h3>How text-shadow works</h3>
+		</div>
+		<div id="cont">
+			<div id="demoCont">
+				<span id="demoText">text-shadow</span>:
+			</div>
+			<div id="demoCode">
+				<code>0px 5px 3px #555;</code>
+			</div>
+		</div>
+		<div id="args">
+			<code>
+				X-Offset Y-Offset Blur Color
+			</code>
+		</div>
+		<div id="arrow1"></div>
+	</div>
+	<br />
+	<h3>Multiple Text Shadows</h3>
+	<p>
+		The text-shadow style can accept multiple values in a comma separated list.
+	</p>
+	<p>
+		According to CSS2, the shadows are laid down in the order they appear, so if they overlap, the last one that is specified should appear on top. CSS3 has now changed that so they are applied in <b>reverse order.</b>
+	</p>
+	<p>
+		To create multiple shadows, the shadows are separeated with a comma.
+	</p>
+	<h4>Here is an example:</h4>
+	<code style="position: relative; left: 10px;white-space: pre-wrap;">
+h1 {
+	text-shadow: 5px 10px 2px #93968f,
+		-3px 6px 5px #58d1e3;
+}
+	</code>
+	<p>
+		This example defines two text shadows at different locations, blur radius, and colors. This makes it look like there are two different light sources on the text.
+	</p>
+	<div id="text2">
+		This text has two shadows
+	</div>
+	<p>
+		To make a text shadow look realistic, remember these few shadow characteristics:
+	</p>
+	<p>
+		- A shadow which is close to the text is normally not as blurred as a shadow that is far from the text. A shadow that is far from the text usually implies a light soure which is also far from the text.
+	</p>
+	<p>
+		- A shadow which is close to the text usually implies that the underlying surface is close, that the light is close, or both. A close shadow is often darker than a distant shadow, because less light can get in between the shape and the underlying surface.
+	</p>
+	<p>
+		To remove a text-shadow, set the text-shadow property to <b>none</b>; no shadows will be associated with that element.
+	</p>
+	<br><br><br><br>
+</body>
+</html>

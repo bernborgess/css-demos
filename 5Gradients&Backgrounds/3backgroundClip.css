@@ -1,0 +1,27 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+code {
+	white-space: pre-line;
+}
+.r {
+	border:2px dotted black;
+	padding: 20px;
+	background: lightblue;
+}
+
+#result1 {
+	background-clip: padding-box;
+}
+#result2 {
+	background-clip: content-box;
+}
+
+#result3 {
+	padding: 30px;
+	height: 80px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png");
+	background-size: 100px 100px;
+	background-clip: content-box;
+}

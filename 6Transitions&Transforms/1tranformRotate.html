@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="1tranformRotate.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>CSS3 Transforms</h3>
+	<p>
+		CSS3 transforms allow you to translate, rotate, scale, and skew elements.
+A transformation is an effect that lets an element change shape, size, and position.
+	</p>
+	<p>
+		CSS3 supports 2D and 3D transformations. Let's take a look at the rotate transformation:
+	</p>
+	<code>
+		div {
+			width: 200px;
+			height: 100px;
+			margin-top: 30px;
+			background-color: #32CD32;
+		}
+	</code>
+	<p>
+		The div element before the tranformation will look like this:
+	</p>
+	<div id="result1"></div>
+	<p>
+		Now let's apply the div element to rotate by 10deg
+	</p>
+	<code>
+		div {
+			width: 200px;
+			height: 100px;
+			margin-top: 30px;
+			background-color: #32CD32;
+			tranform: rotate(10deg);
+		}
+	</code>
+	<p>
+		And here is the result:
+	</p>
+	<div id="result2"></div>
+	<p>
+		The rotate() method rotates an element clockwise or counter-clockwise, according to a given degree.
+	</p>
+	<p>
+		Negative value will result in a counter clockwise rotation.
+	</p>
+	<h3>Using Negative Values</h3>
+	<p>
+		As previously mentioned, using a positive value will rotate an element clockwise, and using a negative value will rotate the element counter-clockwise.
+	</p>
+	<code>
+		div.positive {
+			width: 200px;
+			height: 100px;
+			margin-top: 30px;
+			background-color: #32CD32;
+			transform: rotate(10deg);
+			-webkit-transform: rotate(10deg);
+		}
+		div.negative {
+			width: 200px;
+			height: 100px;
+			margin-top: 30px;
+			background-color: #32CD32;
+			transform: rotate(-10deg);
+			-webkit-transform: rotate(-10deg);
+		}
+	</code>
+	<h4>Rotated by 10 degrees</h4>
+	<div class="positive"></div>
+	<h4>Rotated by minus 10 degrees</h4>
+	<div class="negative"></div>
+</body>
+</html>

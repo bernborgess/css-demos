@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="4transparentBorders.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Transparent Borders with background-clip</h3>
+	<p>
+		Setting a transparent border on an element will
+		reveal the element's own background under the 
+		border.
+	</p>
+	<p>
+		In the example below, we set the borders to be 
+		transparent using RGBA, but they actually appear
+		solid gray.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		df
+
+	</code>
+	<h4>Result:</h4>
+	<div id="capsule1">
+		<div id="backg1">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eum excepturi non explicabo rerum repellat facilis dolorum, totam quo id quia ipsam voluptatum eligendi impedit? Alias molestias aperiam praesentium sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptates voluptatibus sed. Nulla blanditiis inventore dolorum distinctio soluta at sunt recusandae voluptate odio nostrum culpa, quia dignissimos incidunt cum aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate blanditiis minus, iusto perspiciatis, corrupti illo eum nemo doloribus hic ipsum numquam beatae cumque saepe accusamus praesentium neque obcaecati et!
+		</div>
+		<div id="result1" class="r">
+			In the screenshot, the borders use RGBA
+			to be transparent, but they appear solid
+			gray, because they are only revealing the 
+			solid white background of itself.
+		</div>
+	</div>
+	<br><br><br>
+	<p>
+		By setting the <b>background-clip</b> property
+		to <b>padding-box</b>, the corders will be made 
+		transparent.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		dsf
+
+	</code>
+	<div id="capsule2">
+		<div id="backg2">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eum excepturi non explicabo rerum repellat facilis dolorum, totam quo id quia ipsam voluptatum eligendi impedit? Alias molestias aperiam praesentium sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptates voluptatibus sed. Nulla blanditiis inventore dolorum distinctio soluta at sunt recusandae voluptate odio nostrum culpa, quia dignissimos incidunt cum aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate blanditiis minus, iusto perspiciatis, corrupti illo eum nemo doloribus hic ipsum numquam beatae cumque saepe accusamus praesentium neque obcaecati et!
+		</div>
+		<div id="result2" class="r">
+			In the screenshot, we set the background-clip 
+			to the padding-box. 
+			The white background ends before the border and 
+			the transparency lays over the content.
+		</div>
+	</div>
+	<br><br><br><br>
+	<p>
+		Transparency effect is achieved with the 
+		background-clip:padding-box; Without it, the 
+		background of the box also goes beneath
+		the borders, making it non-transparent.
+	</p>
+
+</body>
+</html>

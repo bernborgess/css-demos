@@ -1,0 +1,34 @@
+body {
+	font-family: 'Comfortaa', cursive;
+} 
+
+
+table.t1 {
+	border-collapse: separate;
+	border-spacing: 20px 40px;
+}
+
+caption {
+	caption-side:top;
+}
+
+table.t2 {
+	border-collapse: separate;
+	empty-cells: hide;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid gray;
+} 
+td {
+    border: 1px solid gray;
+}
+
+table.auto {
+    table-layout: auto;
+}
+table.fixed {
+    table-layout: fixed;
+}

@@ -1,0 +1,32 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+code {
+	white-space: pre-line;
+}
+#capsule1 {
+	position: relative;
+}
+#capsule2 {
+	position: relative;
+}
+
+#result1 {
+	border: 20px solid rgba(0,0,0,0.3);
+	width: 200px;
+	position:absolute;
+	top:50px;
+	left:50px;
+	background-color: white;
+}
+
+#result2 {
+	border: 20px solid rgba(0,0,0,0.3);
+	width: 200px;
+	position:absolute;
+	top:50px;
+	left:50px;
+	background-color: white;
+	background-clip: padding-box;
+}

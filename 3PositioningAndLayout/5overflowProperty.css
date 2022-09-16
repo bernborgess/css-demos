@@ -1,0 +1,27 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+#div1 {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+}
+
+#div2 {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+	overflow: scroll;
+}
+
+#div3 {
+	width: 150px;
+	height: 150px;
+	background-color: LightBlue;
+	float: left;
+	overflow: hidden;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="1radialGradients.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Radial Gradients</h3>
+	<p>
+		To create a radial gradient, you must define at 
+		least <b>two color stops.</b>
+	</p>
+	<p>
+		The radial gradient is defined by its <b>center.</b>
+	</p>
+	<h4>The CSS syntax of the radial gradient looks like this:</h4>
+	<code>
+		background: radial-gradient(position, shape or size, color-stops);
+
+	</code>
+	<p>
+		The <b>first value</b> defines the gradient position.
+		We can use a descriptive keyword, such as top,
+		bottom, center, or let; or we can specify, for 
+		example, 50% 50% to set the gradient at the 
+		center of 0% 0% to set the gradient to start at top
+		left.
+	</p>
+	<p>
+		The <b>second value</b> defines the shape and the 
+		gradient size. There are two arguments to shape
+		gradients: The first is the <b>ellipse, which is the
+		default</b>; and the second is the <b>circle</b>.
+	</p>
+	<p>
+		Lastly, the third value defines the color combination.
+	</p>
+	<br>
+	<h3>Setting the Shapes</h3>
+	<p>
+		THe shape parameter defines the shape. If you do 
+		not define the shape of the radial gradient, it will
+		take the ellipse value by default.
+	</p>
+	<p>
+		In the example below, we didn't specify the shape 
+		of the first div's radial gradient, but for the second,
+		we set the value to circle.
+		Here is what happened:
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		#result1 {
+			background: radial-gradient(green,yellow,blue);	
+		}
+		#result2 {
+			background: radial-gradient(circle,green,yellow,blue);
+		}
+
+	</code>
+	<div id="result1" class="r">
+		Ellipse(Default)
+	</div>
+	<br>
+	<div id="result2" class="r">
+		Circle
+	</div>
+	<br>
+	<h3>Radial Gradient Position</h3>
+	<p>
+		Essentialy, we can use the same method used 
+		to specify the location of a background image
+		with the background-position CSS property to 
+		specify the location of the ellipse's center. We 
+		specify the horizontal position of the background,
+		and - optionally - the vertical position using 
+		either keywords (left, center right  or top, center 
+		bottom), length values, percentage values, or 
+		some combination of these.
+	</p>
+	<p>
+		In the example below, the first gradient starts
+		from the top left corner; in the second, we set 5% 
+		to the green, 15% to the yellow and 60% to the 
+		blue.
+	</p>
+	<code>
+		#result3 {
+			background: radial-gradient(at top left,green,yellow,blue);	
+		}
+		
+		#result4 {
+			background: radial-gradient(green 5%,yellow 15%,blue 60%);	
+		}
+
+	</code>
+	<div id="result3" class="r">
+		Top Left
+	</div>
+	<div id="result4" class="r">
+		In Percentages
+	</div>
+	<p>
+		In addition to percentages, you can use 
+		<b>pixels</b> or <b>ems</b>.
+	</p>
+	<h3>Setting the Color Stops</h3>
+	<p>
+		As with linear gradients, a color stop is specified
+		with a color, plus an optional stop position, which
+		is a length or percentage value.
+	</p>
+	<h4>Here is a simple circular gradient with color stops:</h4>
+	<code>
+		#result5 {
+			background: radial-gradient(circle, green 40%, yellow 50%, blue 70%);
+		}
+		
+	</code>
+	<div id="result5" class="r">
+		Color Stops
+	</div>
+	<br><br><br><br>
+</body>
+</html>

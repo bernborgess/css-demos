@@ -1,0 +1,15 @@
+p.nowrap {
+	white-space: nowrap;
+}
+
+p.pre {
+	white-space: pre;
+}
+
+p.preline {
+	white-space: pre-line;
+}
+
+p.prewrap {
+	white-space: pre-wrap;
+}

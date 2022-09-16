@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="2backgroundSize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>The background-size Property</h3>
+	<p>
+		The <b>background-size</b> property adds new 
+		functionality to CSS that allows us to specify the 
+		size of background images, using either lenghts
+		or percentages.
+	</p>
+	<h4>For example:</h4>
+	<code>
+		#result1 {
+			background-size: 100px 100px;
+		}
+
+	</code>
+	<div id="result1" class="r">
+	</div>
+	<h3>The background-size Value</h3>
+	<p>
+		The two other passible value for background 
+		size are the keywords <b>contain</b> and <b>cover</b>.
+	</p>
+	<p>
+		The contain keyword scales the image so that it 
+		fits the container.
+	</p>
+	<p>
+		In other words, the image will grow or shrink 
+		proportionally, but the widht and height will not 
+		exceed the container's dimensions:
+	</p>
+	<h4>CSS syntax looks like this:</h4>
+	<code>
+		background-size: contain;
+
+	</code>
+	<h4>Result:</h4>
+	<div id="result2" class="r"></div>
+	<p>
+		background-size also accepts the <b>cover</b> keyword.
+		The image is scaled to fit the entire container;
+		however, if that has a different aspect ratio, the 
+		image will be cropped:
+	</p>
+	<h4>CSS syntax looks like this:</h4>
+	<code>
+		background-size: cover;
+
+	</code>
+	<div id="result3" class="r"></div>
+	<br><br><br><br>
+</body>
+</html>

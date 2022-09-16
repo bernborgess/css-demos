@@ -1,0 +1,31 @@
+body {
+	font-family: 'Comfortaa', cursive;
+
+} 
+
+p {
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: cursive;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: red;
+	font-family: fantasy;
+}
+
+a:active {
+	color: brown;
+}

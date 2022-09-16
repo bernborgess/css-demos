@@ -1,0 +1,36 @@
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 110%;
+  padding-bottom: 400px;
+}
+code {
+  white-space: pre-line;
+}
+
+img {
+  width: 130px;
+  height: 100px;
+}
+.dropshadow {
+  filter: drop-shadow(5px 9px 2px blue);
+  -webkit-filter: drop-shadow(5px 9px 2px blue);
+}
+.filtered {
+  filter: grayscale(100%);
+}
+
+.sepiaFilter {
+  filter: sepia(100%);
+}
+.saturateFilter {
+	filter: saturate(50%);
+}
+.superSaturateFilter {
+	filter: saturate(2.5);
+}
+.huerotate {
+	filter: hue-rotate(180deg);
+}
+.invertFilter{
+	filter: invert(70%);
+}

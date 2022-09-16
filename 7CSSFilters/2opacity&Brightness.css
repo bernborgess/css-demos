@@ -1,0 +1,23 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+	padding-bottom: 400px;
+} 
+code {
+	white-space: pre-line;
+}
+.opacityFilter {
+	filter: opacity(70%);
+}
+.brightnessFilter {
+	filter: brightness(50%);
+}
+.brightnessFilter2 {
+	filter: brightness(1.9);
+}
+.contrastFilter {
+	filter: contrast(140%);
+}
+.blured {
+	filter: blur(5px);
+}

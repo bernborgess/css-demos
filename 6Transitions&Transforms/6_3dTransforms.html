@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="6_3dTransforms.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>3D Tranforms</h3>
+	<p>
+		Along with the x and y axes, 3D Transforms introduce the Z-axis, which enables 3D manipulations.
+		3D Transforms are quite similar to 2D Transforms:
+		rotateX(), rotateY() and rotateZ() rotate an element in 3D space around the corresponding axis at a given degree.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		div.X {
+			transform: rotateX(150deg);
+		}
+	</code>
+	<div class="rot" >Original</div><br><br>
+	<div class="rot" id="X">rotateX(135deg)</div><br><br>
+	<div class="rot" id="Y">rotateY(135deg)</div><br><br>
+	<div class="rot" id="Z">rotateZ(135deg)</div><br><br>
+	<br><br><br>
+	<p>
+		You can switch off all transformations applied to an element using the none function: transform: none;
+	</p>
+	<br>
+	<h3>Translations</h3>
+	<p>
+		3D translate methods allow you to move the element horizontally (translateX), vertically (translateY) and into or out of the screen (translateZ), using any CSS length units (px, em, %, etc.). Positive values moves the element toward the viewer, negative values away.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		#mybox1 {
+			transform: translateX(29px) translateY(5em) translateZ(-13px);
+			-webkit-transform: translateX(29px) translateY(5em) translateZ(-13px);
+			width:250px;
+			height:100px;
+			color:white;
+			background-color:green;
+		}
+	</code>
+	<h4>Result (Before translation):</h4>
+	<div class="box">This is a normal div element</div> 
+	<h4>Result (After translation):</h4>
+	<div class="box" id="mybox1"> translateX(29px) translateY(5em) translateZ(-13px);</div> 
+	<br><br><br><br>
+	<br><br><br><br>
+	<p>
+		The translate3d() method allows us to pass the x, y, and z offsets, all at once and in the following order:
+	</p>
+	<code>
+		#mybox1 {
+			transform: tranlate3d(-20px, 4em, 10px);
+		}
+	</code>
+	<p>
+		Like the translate3d() method, there are also scale3d() and rotate3d(), which are applicable for scaling and rotating elements in 3D.
+	</p>
+	<p>
+		Translation of an element is similar to relative positioning - it doesn't affect the document's flow. The translated element will keep its position in the flow and will only appear to have moved.
+	</p>
+
+	<h3>Perspective</h3>
+	<p>	
+		Perspective defines how the depth of the 3D scene is rendered. Think of perspective as a distance from the viewer to the object. The greater the value, the further the distance, so the less intense the visual effect.
+		When defining the perspective property for an element, it is the child elements that get the perspective view, not the element itself.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		div.empty-div {
+			perspective: 100px;
+		}
+		div.green-div {
+			transform: rotateX(45deg);
+		}
+	</code>
+	<h4>Result</h4>
+	<div class="empty-div">
+		<div class="green-div">Example</div>
+	</div>
+	<p>
+		The perspective property only affects 3d transformed elements.
+	</p>
+</body>
+</html>

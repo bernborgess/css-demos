@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Properties</title>
+	<link rel="stylesheet" href="9stylingTheTables.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>The Table Properties</h3>
+	<p>
+		The look of an HTML table can be greatly
+		improved with CSS.
+	</p>
+	<p>
+		The <b>border-collapse</b> property specifies whether
+		the table borders are collapsed inta a single
+		border or separated as default. If the vorders are 
+		separate, the <b>border-spacing</b> property can be
+		used to change the spacing.
+	</p>
+	<br>
+
+	<table class="t1" border="1" >
+		<tr>
+			<td>Red</td>
+			<td>Green</td>
+		</tr>
+		<tr>
+			<td>Blue</td>
+			<td>Yellow</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+	<caption>Some of Our Courses</caption>
+	<tr>
+		<th>Course name</th>
+		<th>Lesson</th>
+		<th>Quizzes</th>
+	</tr>
+	<tr>
+		<td>C++</td>
+		<td>81</td>
+		<td>36</td>
+	</tr>
+	<tr>
+		<td>JavaScript</td>
+		<td>48</td>
+		<td>144</td>
+	</tr>
+	<tr>
+		<td>HTML</td>
+		<td>38</td>
+		<td>119</td>
+	</tr>
+	<tr>
+		<td>CSS</td>
+		<td>70</td>
+		<td>174</td>
+	</tr>
+	</table>
+	<br><br><br>
+	<h3>The empty-cells Property</h3>
+	<p>
+		The <b>empty-cells</b> property specifies whether or not display border and
+		background on empty cells in a table.
+	</p>
+	<p>
+		show: the borders of an empty cell are rendered
+	hide: the borders of an empty cell are not drawn
+
+	Here is the empty-cells property that is used to hide borders of empty cells in the table element.
+	</p>
+
+	<table class="t2" border="1">
+		<tr>
+		  <td>HTML</td>
+		  <td>CSS</td>
+		</tr>
+		<tr>
+		  <td>JavaScript</td>
+		  <td></td>
+		</tr>
+	</table>
+
+
+	<h3>The table-layout Property</h3>
+	<p>
+		The table-layout specifies how the width of table columns is calculated. The possible values are:
+		auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+		fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+	</p>
+	<p>	
+		The table layout is set to auto by default.
+		The example below shows the difference between auto and fixed.
+	</p>
+
+	<p>Table-layout is set to <strong>auto</strong></p>
+	<table class="auto">
+	<tr>
+		<td width=“10%">500.000.000.000.000</td>
+		<td width="90%">20.000</td>
+	</tr>
+	</table>
+
+	<p>Table-layout is set to <strong>fixed</strong></p>
+	<table class="fixed">
+	<tr>
+		<td width="10%">500.000.000.000.000</td>
+		<td width="90%">20.000</td>
+	</tr>
+	</table>
+
+
+
+
+
+	<br><br><br><br>
+</body>
+</html>

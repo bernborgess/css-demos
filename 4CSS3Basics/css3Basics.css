@@ -1,0 +1,109 @@
+body {
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	font-family: 'Zilla Slab', serif;
+	max-width: 1920px;
+	font-size: 130%;
+	display: flex;
+	justify-content: center;
+	color: rgb(204, 41, 41);
+	position: relative;
+	margin-bottom: 100px;
+	height: 1100%;
+}
+
+
+#board {
+	background-image: url("https://wallpapercave.com/wp/5Vf1fcM.jpg");
+	background-size: 100%;
+	padding: 40px;
+	border-style:groove;
+	border-width: 8px;
+	border-radius: 3%;
+	max-width: 500px;
+	/* max-height: 800px; */
+	height:fit-content;
+	position: relative;
+	top: 20px;
+
+}
+
+#headline {
+	text-align: center;
+	background-color:transparent;
+	/* background-image: url("https://cdn1.vectorstock.com/i/1000x1000/96/15/seamless-pattern-light-blue-bg-vector-11379615.jpg"); */
+	backdrop-filter: blur(10px);
+	border-style:double;
+	border-radius: 10%;
+	color: royalblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 300px;
+	font-family: 'Ribeye Marrow', cursive;	position: relative;
+	left: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+}
+
+h4 {
+	color:black;
+	text-shadow: rgb(0, 0, 0) -1px -2px 0.5em;
+}
+
+#headline :is(img) {
+	width: 51px;
+	height: 72px;
+}
+#list {
+	border-style:double;
+	border-radius: 10%;
+	color:navy;
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding: 0.5%;
+	font-family: 'Nova Mono', monospace;
+}
+
+fun {
+	font-family: 'Merienda', cursive;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: turquoise;
+}
+
+button {
+	background-color: brown;
+	size: 170%;
+	position: relative;
+	left: 200px;
+	border: solid maroon 4px;
+}
+
+.listImg {
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	top: 8px;
+	position: relative;
+}

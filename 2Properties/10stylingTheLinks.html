@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Properties</title>
+	<link rel="stylesheet" href="10stylingTheLinks.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h2>Setting Styles to Links</h2>
+	<p>
+		Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+	</p>
+	<p>
+		In addition, links can be styled differently, depending on what state they are
+		in. The following pseudo selectors are available:
+	</p>
+	<p>
+		<b>a:link</b> - defines the style for normal unvisited links
+	</p>
+	<p>	
+		<b>a:visited</b> - defines the style for visited links
+	</p>
+	<p>	
+		<b>a:active</b> - a link becomes active once you click on it
+	</p>
+	<p>	
+		<b>a:hover</b> - a link is hovered when the mouse is over it
+	</p>
+	<p>
+		The example below creates a link that will change the style when the mouse is moved over it.
+	</p>
+
+	<p><a href="" target="_blank">This link is hovered when we mouse over it</a></p>
+	
+	<p>
+		When setting the style for several link states,
+		there are some order rules:
+	</p>
+	<p>
+		a:hover MUST come after a:link and a:visited
+	</p>
+	<p>
+		a:active MUST come after a:hover
+	</p>
+
+
+	<p>
+		By default, text links are underline by the browser.
+	</p>
+	<p>
+		One of the most common uses of CSS with links
+		is to <b>remove the underline</b>. In the example below,
+		the <b>text-decoration</b> property is used to remove
+		the underline.
+	</p>
+
+
+
+
+	<br><br><br><br>
+</body>
+</html>

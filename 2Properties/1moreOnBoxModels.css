@@ -1,0 +1,14 @@
+ body {
+	/* position: absolute;
+	top: 50%;
+	transform: translate(0,-50%); */
+	font-family: 'Comfortaa', cursive;
+} 
+
+img {
+	max-width: 350px;
+}
+
+.italic {
+	font-style: italic;
+}

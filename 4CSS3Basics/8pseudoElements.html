@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="8pseudoElements.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>Working with Pseudo Elements</h3>
+	<p>
+		Pseudo elements are used to select specific 
+		parts of an element.
+	</p>
+	<p>
+		There are fice pseudo elements in CSS, each
+		starting with a double colon (::):
+	</p>
+	<ul>
+		<li><b>::first-line</b> - the first line of the text in a selector</li>
+		<li><b>::first-letter</b> - the first letter of the text in a selector</li>
+		<li><b>::selection</b> - selects the portion of an element that is selected by a user</li>
+		<li><b>::before</b> - inserts some content before an element</li>
+		<li><b>::after</b> - inserts some content after an element</li>
+	</ul>
+	<p>
+		In the example below, the <b>::first-line</b> pseudo
+		element is used to style the first line of our text:
+	</p>
+	<code>
+		p::first-line {
+			color: #589432;
+		}
+	</code>
+	<h4>Result:</h4>
+	<p id="result1">
+		The following example demonstrates how to use the ::first-line
+		element to add special effect to the first line of element in the 
+		document.
+	</p>
+	<p>
+		The <b>::selection</b> pseudo element styles the
+		selected list.
+	</p>
+	<code>
+		p::selection {
+			background: #8bc34a;
+			color: #fff;
+		}
+	</code>
+	<h4>Result:</h4>
+	<p id="result2">
+		The following example demonstrates how to use ::selection 
+		element to change the color of the selected text.
+	</p>
+	<br><br>
+	<h3>Working with Pseudo Elements</h3>
+	<p>
+		Using <b>::before</b> and <b>::after</b> pseudo elements allows
+		us to add a wide variety of content to the page.
+	</p>
+	<p>
+		In the example below, the <b>::before</b> pseudo 
+		element is used to add an image before the list. 
+	</p>
+	<h4>The HTML:</h4>
+	<code>
+		&lt;p&gt;
+			You can insert text, images, and other resources
+			using &lt;strong&gt;::before&lt;/strong&gt; pseudo element.
+		&lt;/p&gt;
+		&lt;p&gt;
+			You can insert text, images, and other resources
+			using &lt;strong&gt;::before&lt;/strong&gt; pseudo element.
+		&lt;/p&gt;
+		&lt;p&gt;
+			You can insert text, images, and other resources
+			using &lt;strong&gt;::before&lt;/strong&gt; pseudo element.
+		&lt;/p&gt;
+		
+	</code>
+	<h4>The CSS:</h4>
+	<code>
+		p::before {
+			content: url("logo.jpg");
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result3">
+		<p>
+			You can insert text, images, and other resources
+			using <strong>::before</strong> pseudo element.
+		</p>
+		<p>
+			You can insert text, images, and other resources
+			using <strong>::before</strong> pseudo element.
+		</p>
+		<p>
+			You can insert text, images, and other resources
+			using <strong>::before</strong> pseudo element.
+		</p>
+		
+	</div>
+	<p>
+		If you change the <b>::before</b> element to <b>::after</b>
+		in the example above, the images will appear
+		at the end of the list.
+	</p>
+	<br><br><br><br>
+</body>
+</html>

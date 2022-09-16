@@ -1,0 +1,19 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+p.static {
+	position: static;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+
+p.position_fixed {
+	position: fixed;
+	top: 30px;
+	right: 5px;
+	color: red;
+}
+

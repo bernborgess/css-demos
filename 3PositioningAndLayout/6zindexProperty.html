@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Positioning and Layout</title>
+	<link rel="stylesheet" href="6zindexProperty.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>The z-index Property</h3>
+	<p>
+		When elements are positioned outside the normal
+		flow, they can overlap other elements.
+		The <b>z-index</b> property specifies the stack order of 
+		an element (which element should be placed in 
+		front of, or behind, the others).
+	</p>
+
+	<div id="blue">Blue</div>
+	<div id="red">Red</div>
+	
+	
+	<br>
+	<i>The red box overlaps the blue box, because
+		it was placed <b>later</b> in the HTML markup.
+		The <b>z-index</b> property can change this order.
+	</i>
+	
+	<h3>Assigning the z-index Property</h3>
+	<p>
+		Assigning a higher z-index value to the blue div 
+		and a lower z-index value to the red div will result 
+		in the following:
+	</p>
+	
+	
+	<div id="lime">Lime</div>
+	<div id="purple"><br><br>Purple</div>
+
+	<br>
+	<i>The z-index works <b>only</b> on positioned 
+	elements (position: absolute, position: relative,
+	 or positon: fixed).</i>
+
+
+
+
+	<br><br><br><br>
+</body>
+</html>

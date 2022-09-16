@@ -1,0 +1,55 @@
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 110%;
+  padding-bottom: 400px;
+}
+code {
+  white-space: pre-line;
+}
+.rot {
+  width: 250px;
+  height: 100px;
+  color: white;
+  background-color: green;
+}
+#X {
+  transform: rotateX(135deg);
+  -webkit-transform: rotateX(135deg);
+}
+#Y {
+  transform: rotateY(135deg);
+  -webkit-transform: rotateY(135deg);
+}
+#Z {
+  transform: rotateZ(135deg);
+  -webkit-transform: rotateZ(135deg);
+}
+.box {
+	width:250px;
+	height:100px;
+	color:white;
+	background-color:green;
+}
+#mybox1 {
+	transform: translateX(29px) translateY(5em) translateZ(-13px);
+	-webkit-transform: translateX(29px) translateY(5em) translateZ(-13px);
+}
+
+div.empty-div {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    perspective: 100px;
+    -webkit-perspective: 100px;
+}
+div.green-div {
+    padding: 60px;
+    position: absolute;
+    background-color: #8bc34a;
+    border: 1px solid white;
+    transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+}

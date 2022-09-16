@@ -1,0 +1,29 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+	padding-bottom: 400px;
+} 
+code {
+	white-space: pre-line;
+}
+#result1 {
+	width: 50px;
+	height: 50px;
+	background: #32CD32;
+	transition: width 3s;
+}
+#result1:hover {
+	width: 250px;
+}
+#result2 {
+	width: 50px;
+	height: 50px;
+	background: #32CD32;
+	transition: width 3s;
+	transition-timing-function: cubic-bezier(0,0,1,1);
+	-webkit-transition: width 3s;
+	-webkit-transition-timing-function: cubic-bezier(0,0,1,1);
+}
+#result2:hover {
+	width: 250px;
+}

@@ -1,0 +1,16 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+}
+
+p.visible {
+	visibility: visible;
+}
+
+p.hidden {
+	visibility: hidden;
+}
+
+p.none {
+	display: none;
+}

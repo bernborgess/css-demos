@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Positioning and Layout</title>
+	<link rel="stylesheet" href="5overflowProperty.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>The Overflow Property</h3>
+
+	<p>
+		As discussed earlier, every element on the page
+		is a <b>box</b>. If the height of the box is not set, the 
+		height of that box will grow as large as necessary
+		to accomodate the content.
+	</p>
+
+	<div id="div1">
+		This text is inside the div element, which
+		has a blue 
+		background-color and is floated to the 
+		left. We set a specific
+		height and width for the div element, and
+		as you can see, 
+		the content cannot fit.
+	</div>
+	<br />
+	<i>The CSS <b>overflow</b> property specifies the 
+		behavior that occurs when an element's
+		content overflows the element's box.</i>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		
+		<h3>The overflow Property Values</h3>
+		
+		<p>
+			There are four values for the overflow property:
+			<b>visible</b> (the default value), <b>scroll, hidden</b> and
+			<b>auto</b>.
+		</p>
+		
+		<p>
+			The value <b>scroll</b> results in clipped overflow, but a 
+			scrollbar is added, so the rest of the content may
+			be seen.
+		</p>
+		<div id="div2">
+			This text is inside the div element, which
+			has a blue 
+			background-color and is floated to the 
+			left. We set a specific
+			height and width for the div element, and
+			as you can see, 
+			the content is seen by scrolling.
+		</div>
+		
+		<i>The code above will produce both <b>horizontal</b> and
+			<b>vertical</b> scrollbars.</i>
+			<br><br><br><br>
+			<br><br><br><br>
+			
+			
+			<h3>auto and hidden</h3>
+			<p>
+				<b>auto</b> - If overflow is clipped, a scroll-bar shoud be
+				added to make it possible to see the rest of the 
+				content.
+			</p>
+			<p>
+				<b>hidden</b> - The overflow is clipped, and the rest of 
+				the content will be invisible.
+			</p>
+			<div id="div3">
+				This text is inside the div element, which
+				has a blue 
+				background-color and is floated to the 
+				left. We set a specific
+				height and width for the div element, and
+				as you can see, 
+				the content is occluded.
+			</div>
+
+			<i>The default value for the overflow property is <b>visible</b></i>
+
+
+
+
+	
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
+</body>
+</html>

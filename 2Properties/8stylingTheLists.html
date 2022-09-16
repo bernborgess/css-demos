@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Properties</title>
+	<link rel="stylesheet" href="8stylingTheLists.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>The list-style property</h3>
+	<p>
+		The CSS list properties allow us to set different
+		list item markers. In HTML, there are two types of
+		lists:
+	</p>
+	<p>
+		<b>unordered lists</b> (&lt;ul&gt;) - the list items are marked with bullets.
+	</p>
+	<p>
+		<b>ordered lists</b> (&lt;ol&gt;) - the list items are marked 
+		with numbers or letters.
+	</p>
+	<p>
+		With CSS, lists can ve styled further, and images 
+		can be used as the list item marker.
+	</p>
+	<p>
+		One of the ways is to use the <b>list-style-type</b>
+		property, which can be set to <b>circle, square,
+		decimal, disc, lower-alpha,</b> etc.
+	</p>
+
+	<ol class="lower-alpha">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ol>
+	
+	<ul class="circle">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ul>
+	
+	<ul class="square">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ul>
+	<br><br>
+
+	<h3>The list Image and Position</h3>
+
+	<p>
+		There are also other list properties, such as:
+	</p>
+	<p>
+		<b>list-style-image</b> - specifies an image to be used
+		as the list item marker.
+	</p>
+	<p>
+		<b>list-style-position</b> - specifies the position of the 
+		marker box (inside, outside).
+	</p>
+	<br>
+	<p>
+		In the example below, we use an image as the list 
+		item marker, and specify the position to be inside 
+		of the content flow.
+	</p>
+
+	<p>The following list has list-style-position: <b>inside</b>.</p>
+	<ul class="ex1">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ul>
+
+	<p>
+		The <b>list-style</b> property is a shorthand property
+		for setting the list-style-type, list-style-image and
+		list-style-position. It is used to set all of the list 
+		properties in one declaration.
+	</p>
+
+	<ul class="ex2">
+		<li>Red</li>
+		<li>Green</li>
+		<li>Blue</li>
+	</ul>
+
+
+	<br><br><br><br>
+</body>
+</html>

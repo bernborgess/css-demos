@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="4keyframes&Animation.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>CSS3 Animations</h3>
+	<p>
+		An animation lets an element gradually change from one style to another.
+		You can change as many CSS properties as you want to, as many times you want to.
+	</p>
+	<p>
+		<b>Keyframes</b> hold the styles the element will have at certain times
+	</p>
+	<h3>The @keyframes Rule</h3>
+	<p>
+		When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+		To get an animation to work, you must bind the animation to an element.
+	</p>
+	<p>
+		The following example will change the background color of an element three times: when the animation is 50% complete, 70% complete, and when the animation is 100% complete.
+	</p>
+	<h4>The CSS:</h4>
+	<code>
+		@keyframes example {
+			0% {background-color: red;}
+			50% {background-color: yellow;}
+			70% {background-color: blue;}
+			100% {background-color: green;}
+		}
+	</code>
+	<p>
+		<b>example</b> is the name of the animation. You can choose any name for your animation.
+	</p>
+	<br><br><br>
+	<h3>The @keyframes rule</h3>
+	<p>
+		As an alternative to using percentages, you can use from and to keywords, where:
+	</p>
+	<p><b>from</b> is a starting offset of 0%</p>
+	<p><b>to</b> is an ending offset of 100%.</p>
+	<p>
+		The two examples below are equivalent, and produce the same result:
+	</p>
+	<code>
+		@keyframes colorchange {
+			0% {background-color: red;}
+			100% {background-color: green;}
+		}
+	</code>
+	<code>
+		@keyframes colorchange {
+			from {background-color: red;}
+			to {background-color: green;}
+		}
+	</code>
+	<p>
+		<b>colorchange</b> is the animation name.
+	</p>
+	<br><br><br>
+	<h3>The @keyframes Rule</h3>
+	<p>
+		To get an animation to work, you must bind the animation to an element.
+		In the example below, the animation lasts one second, and changes the background color of the red div to green and blue.
+	</p>
+	<code>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: colorchange;
+			animation-duration: 1s;
+		}
+		@keyframes colorchange {
+			0% {background-color: red; }
+			50% {background-color: green;}
+			100% {background-color: blue;}
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1"></div>
+	<p>
+		The <b>animation-name</b> property specifies the animation to be used for the element.
+	</p>
+	<p>
+		The <b>animation-duration</b> property specifies the duration of the selected animation.
+	</p>
+	<p>
+		If the animation-duration property is not specified, the animation will have no effect, because the default value is 0.
+	</p>
+</body>
+</html>

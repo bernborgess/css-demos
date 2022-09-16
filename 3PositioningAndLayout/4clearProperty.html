@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Positioning and Layout</title>
+	<link rel="stylesheet" href="4clearProperty.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Clearing the Float</h3>
+	<p>
+		Elements that come after the floating element
+		will flow around it. To avoid this, use the clear 
+		property.
+	</p>
+	<p>
+		The <b>clear</b> property specifies the side of an
+		element where other floating elements are not 
+		allowed to be.
+	</p>
+	<p>
+		In the example below, if we set the float property 
+		to the div, only the paragraph that comes after the 
+		div will be wrapped around the image.
+	</p>
+
+	This paragraph is above the div element and is not affected
+	by the float right property.
+	<br /><br />
+	<div class="floating">
+		<img src="https://lh3.googleusercontent.com/proxy/maNVevu4Ub4uLL-hwHG6E75OHOaer2Kz2HQ-NCbRmv7Tqv2bt3CtHRbf8cALIgiIH9Qx-QKxltAklu4-R5_pAcMnj9SSZdkONxH8-rp3OG6bX4LikhPgqonaYdcT" height="100px" />
+	</div>
+	This paragraph also comes after the div element 
+	and is affected by the float right property.
+	<br /> <br />
+	
+	<br /> <br />
+	<h3>Using clear</h3>
+	<p>
+		Use the values <b>right, left</b> and <b>both</b> to specify
+		the side of an element where other floating elements are not
+		allowed to be.
+	</p>
+	<p>
+		The default is <b>none</b>, which allows floating 
+		elements on both sides.
+	</p>
+
+	This paragraph is above the div element and is not affected
+	by the float right property.
+	<br /><br />
+	<div class="floating">
+		<img src="https://lh3.googleusercontent.com/proxy/maNVevu4Ub4uLL-hwHG6E75OHOaer2Kz2HQ-NCbRmv7Tqv2bt3CtHRbf8cALIgiIH9Qx-QKxltAklu4-R5_pAcMnj9SSZdkONxH8-rp3OG6bX4LikhPgqonaYdcT" height="100px" />
+	</div>
+	This paragraph also comes after the div element 
+	and is affected by the float right property.
+	<br /> <br class="clearing"/>
+	This paragraph is out of the floating group 
+	and is not affected by the flaot right propery.
+	<br /> <br />
+
+
+
+	<br><br><br><br>
+</body>
+</html>

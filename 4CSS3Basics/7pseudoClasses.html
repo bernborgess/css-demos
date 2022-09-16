@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="7pseudoClasses.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	
+	<h3>Working with Pseudo-Classes</h3>
+	<p>
+		The CSS pseudo-classes allow us to style 
+		elements, or parts of elements, that exist in 
+		the document tree without using JavaScript or
+		any other scripts. A pseudo-class start with a 
+		":" (colon).
+	</p>
+	<p>
+		The most comonly used pseudo-classes 
+		are <b>:first-child</b> and <b>:last-child</b>.
+	</p>
+	<p>
+		The <b>:first-child</b> pseudo-classe matches an element 
+		that is the first child element of some other element.
+	</p>
+	<p>
+		In the following example, the selector matches
+		any &lt;p&gt; element:
+	</p>
+	<h4>The HTML:</h4>
+	<code>
+		&lt;div id="parent"&gt;
+		&lt;p&gt;First paragraph&lt;/p&gt;
+		&lt;p&gt;Second paragraph&lt;/p&gt;
+		&lt;p&gt;Third paragraph&lt;/p&gt;
+		&lt;p&gt;Fourth paragraph&lt;/p&gt;
+		&lt;/div&gt;
+	</code>
+	<h4>The CSS:</h4>
+	<code>
+		#parent p:first-child {
+			color: green;
+			text-decoration: underline;
+		}
+	</code>
+	<h4>Result:</h4>
+	<div id="result1">
+		<div id="parent">
+			<p>First paragraph</p>
+			<p>Second paragraph</p>
+			<p>Third paragraph</p>
+			<p>Fourth paragraph</p>
+		</div>
+	</div>
+	<p>
+		The <b>:last-child</b> pseudo-class mathces an element 
+		that is the last child element of some other element.
+	</p>
+	<p>
+		In the example below, the selector will match 
+		any &lt;p&gt; element that is the lat child of the div 
+		element;
+	</p>
+	<code>
+		#parent p:last-child {
+			color: green;
+			text-decoration: underline;
+		}
+	</code>
+	<br>
+	<div id="result2">
+		<div id="parent2">
+			<p>First paragraph</p>
+			<p>Second paragraph</p>
+			<p>Third paragraph</p>
+			<p>Fourth paragraph</p>
+		</div>
+	</div>
+	<br><br><br><br>
+</body>
+</html>

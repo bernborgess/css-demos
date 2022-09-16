@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="2opacity&Brightness.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>The opacity Function</h3>
+	<p>
+		The opacity function sets the opacity of an image to change its transparency.
+		0% opacity creates a completely transparent image, whereas 100% is the original image.
+	</p>
+	<h4>For example:</h4>
+	<code>
+		.opacityFilter {
+			filter: opacity(70%);
+		}
+	</code><br>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="opacityFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<h3>The brightenss Function</h3>
+	<p>
+		The brightness(amount) function adjusts the brightness of an image, making it appear brighter or darker.
+		The amount parameter determines the brightness level of the image. The parameter can take either a percentage value or a number.
+	</p>
+	<p>
+		A value of 0% results in an image that is completely black.
+		A value of 100% results in an image that is unchanged.
+		Any amount over 100% produces a brighter image.
+	</p>
+	<h4>Here is an example using a percentage value to make the image darker:</h4>
+	<code>
+		.brightnessFilter {
+			filter: brightness(50%);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="brightnessFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		A value under 100% darkens the image, while a value over 100% brightens it.
+	</p>
+	<p>
+		A number value of 0.5 has the same effect as the percentage value of 50%. A value of 1 is the same as 100%.
+	</p>
+	<h4>Here is an example using a number value to make the image brighter:</h4>
+	<code>
+		.brightnessFilter2 {
+			filter: brightness(1.9);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="brightnessFilter2" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		Any negative value will make the image black.
+	</p>
+	<br>
+	<h3>The contrast Function</h3>
+	<p>
+		The contrast function adjusts the contrast of the image.
+		The amount parameter can take either a percentage value or a number.
+	</p>
+	<p>
+		A value under 100% decreases the contrast, while a value over 100% increases it.
+	</p>
+	<p>
+		A value of 0% will create an image that is completely gray, while a value of 100% leaves the image unchanged.
+	</p>
+	<p>
+		The value 0.5 corresponds to 50%, while 1 is the same as 100%.
+	</p>
+	<h4>Here is an example using a percentage value to give the image more contrast:</h4>
+	<code>
+		.contrastFilter {
+			filter: contrast(140%);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="contrastFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		Any negative value leaves the image unchanged.
+	</p>
+	<br>
+	<h3>The blur Function</h3>
+	<p>
+		The blur function applies a blur effect to an image.
+		The blur function has only one parameter, radius, which defines how many pixels on the screen blend into each other. (a larger value creates more blur).
+	</p>
+	<h4>For example:</h4>
+	<code>
+		.blured {
+			filter: blur(5px);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="blured" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		The parameter is specified as a CSS length, but does not accept percentage values.
+	</p>
+	<p>
+		If no parameter is provided, then the default value 0 is used, which leaves the image unchanged.
+	</p>
+	<h4>Fox example:</h4>
+	<code>
+		.blur {
+			/* Both have no effect */
+			blur();
+			blur(0);
+		}
+	</code>
+
+
+
+
+
+
+
+
+</body>
+</html>

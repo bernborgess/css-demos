@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gradients & Backgrounds</title>
+	<link rel="stylesheet" href="6opacity.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>The Opacity Property</h3>
+	<p>
+		CSS opacity property provides an excellent means of adding opacity to any element.
+	</p>
+	<p>
+		In the example below, we set different levels of opacity to the same picture, so you can clearly see the difference.
+	</p>
+	<code>
+		#img1 {
+			opacity: 1;
+		}
+		#img2 {
+			opacity: 0.5;
+		}
+		#img3 {
+			opacity: 0.25;
+		}
+	</code>
+	<h4>Result:</h4>
+	<div>
+		<img src="sololearn.png" alt="" id="img1">
+		<img src="sololearn.png" alt="" id="img2">
+		<img src="sololearn.png" alt="" id="img3">
+	</div>
+	<p>
+		The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+	</p>
+	<h3>Opacity in Internet Explorer</h3>
+	<p>
+		To have the opacity property work in all versions of IE, use the filter:alpha(opacity=x) along with the opacity property. x can take a value from 0 to 100.
+The value 0 results in a completely transparent element (i.e., 100% transparent), whereas the value 100 makes the element completely opaque (i.e., 0% transparent).
+	</p>
+	<p>
+		For example, in order to have the code work properly with IE, when the opacity of the image is set at 0.5, it should look like this:
+	</p>
+	<code>
+		#img {
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+		}
+	</code>
+	<p>
+		The alpha filter is a Microsoft-only property, not a standard CSS property.
+	</p>
+	<br><br><br><br>
+</body>
+</html>

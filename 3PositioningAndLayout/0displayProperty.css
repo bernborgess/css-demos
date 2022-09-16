@@ -1,0 +1,16 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+
+span.block {
+	display: block;
+}
+
+p.inline {
+	display: inline;
+}
+
+p.none {
+	display: none;
+}

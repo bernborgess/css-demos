@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3 Basics</title>
+	<link rel="stylesheet" href="3boxShadow.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Box Shadow</h3>
+	<p>
+		The CSS3 <strong>box-shadow</strong> property applies shadow to elements.
+		Components of the box-shadow property are decoded by browsers in the following manner:
+		<ol>
+			<li>
+				The first length for the <b>horizontal offset</b> will cast the shadow
+				to the right of the box (required)
+			</li>
+			<li>
+				The second length is for the <b>vertical offset</b> that will cast the shadow
+				to below the box (required)
+			</li>
+			<li>
+				The <b>color</b> of the shadow (optional)
+			</li>
+		</ol>
+	</p>
+	<p>
+		<b>
+			In the example below, the horizontal and vertical offsets have been
+			set to 10px:
+		</b>
+	</p>
+	<br>
+	<code>
+		width: 300px;
+		height: 100px;
+		background-color: #9ACD32;
+		box-shadow: 10px 10px #888888;
+	</code>
+	<br>
+	<div id="myShadow"></div>
+	<br>
+	<h3>Blur and Spread</h3>
+	<p>
+		Besides color, there are also two optional values for the 
+		box-shadow element, which are <b>blur</b> and <b>spread</b>.
+	</p>
+	<br>
+	<code>
+		box-shadow: 10px 10px 5px 5px #888888;
+	</code>
+	<br>
+	<div id="myBlur"></div>
+	<br>
+
+	<h3>Negative Values</h3>
+	<p>
+		<b>Negative values</b> can also be used for the box-shadow property.
+	</p>
+	<ul>
+		<li>
+			<b>horizontal offset</b> - the shadow will be to the <b>left</b> of the box.
+		</li>
+		<li>
+			<b>vertical offset</b> - the shadow will be <b>above</b> the box.
+		</li>
+		<li>
+			<b>blur radius</b> - negative values are <b>not allowed.</b>
+		</li>
+		<li>
+			<b>spread radius</b> - negative values will cause the shadow to <b>shrink</b>
+		</li>
+	</ul><br>
+	<code>
+		box-shadow: -10px -10px 5px -5px #888888;
+	</code>
+	<br>
+	<div id="myNegative"></div>
+	<br><br><br><br>
+</body>
+</html>

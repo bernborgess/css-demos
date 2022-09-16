@@ -1,0 +1,26 @@
+body {
+	font-family: 'Comfortaa', cursive;
+} 
+
+ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+
+ul.circle {
+	list-style-type: circle;
+}
+
+ul.square {
+	list-style-type: square;
+}
+
+ul.ex1 {
+	list-style-image: url("https://resources.urionlinejudge.com.br/gallery/images/flags/br.gif");
+	list-style-position: inside;
+	border: solid 3px black;
+}
+
+ul.ex2 {
+	list-style: square outside url("https://c7k2s2v9.stackpathcdn.com/wp-content/uploads/2020/01/info-icon-website.png");
+	border: solid 3px black;
+}

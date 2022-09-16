@@ -1,0 +1,21 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 110%;
+} 
+
+code {
+	white-space: pre-line;
+}
+
+#result1::first-line {
+	color: #589432;
+}
+
+#result2::selection {
+	background: #8bc34a;
+	color: #fff;
+}
+
+#result3 p::before {
+	content: url("marion.png");
+}

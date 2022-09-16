@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="0cssFilters.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>CSS3 Filters</h3>
+	<p>
+		The CSS filter property lets you apply graphical effects like blurring or color shifting to an element.
+		Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+	</p>
+	<p>
+		Image filtering is useful when you want to have different styling for the same image.
+		Instead of uploading multiple images to the website, you can upload only one image and then define visual effects using the filter property.
+	</p>
+	<p>
+		Filter functions include blur(), brightness(), contrast(), drop-shadow(), grayscale(), hue-rotate(), invert(), opacity(), saturate() and sepia().
+	</p>
+	<br>
+	<h3>The drop-shadow Function</h3>
+	<p>
+		drop-shadow(w h b c) creates a shadow effect that extends beyond an image for the width w and height h with blur b and color c.
+		w, h, and b are values in pixels.
+	</p>
+	<h4>For example:</h4>
+	<code>
+		.dropshadow {
+			filter: drop-shadow(5px 9px 2px blue);
+		}
+	</code>
+	<br>
+	<img class="dropshadow" src="http://www.sololearn.com/images/tree.jpg"/>
+	<br>
+	<p>
+		Positive values create the shadow to the right and below the image.
+		Negative width and height values create the shadow above and to the left of the image.
+	</p>
+	<br>
+
+
+
+
+
+
+</body>
+</html>

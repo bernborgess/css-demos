@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transitions & Transforms</title>
+	<link rel="stylesheet" href="1filterFunctions.css">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+	<h3>Filter Functions</h3>
+	<h3>The grayscale Function</h3>
+	<p>
+		The grayscale function converts an image to grayscale.
+		The only parameter defines the proportion of the conversion.
+	</p>
+	<p>
+		0% grayscale is the original image, whereas 100% makes the image completely grayscale.
+	</p>
+	<p>
+		Here is an example using a percentage value to make an image completely grayscale:
+	</p>
+	<code>
+		.filtered {
+			filter: grayscale(100%);
+		}
+	</code>
+	<br>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="filtered" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		Any negative values leaves the image unchanged.
+	</p>
+	<br>
+	<h3>The sepia Function</h3>
+	<p>
+		The sepia function converts an image to sepia.
+		This is similar to using grayscale but with a reddish-brown color tone.
+	</p>
+	<p>
+		The idea behind sepia filters is that they can make black and white photos look a bit more eye-catching than the basic grayscale version.
+	</p>
+	<p>
+		0% sepia is the original image, whereas 100% converts the image to sepia completely:
+	</p>
+	<code>
+		.sepiaFilter {
+			filter: sepia(100%);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+    <img class="sepiaFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<br>
+	<h3>The saturate Function</h3>
+	<p>
+		The saturate function controls the color saturation for an image. The only parameter determines the proportion of the saturation that is applied to the image.
+		The parameter can be either a percentage value or a number.
+	</p>
+	<p>
+		0% creates a completely unsaturated image (grayscale), whereas 100% is the original image.
+	</p>
+	<code>
+		.saturateFilter {
+			filter: saturate(50%);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="saturateFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		Here is an example using a number value to make an image super-saturated
+	</p>
+	<img class="superSaturateFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		The saturate function also accepts values over 100%.
+	</p>
+	<h3>The hue-rotate Function</h3>
+	<p>
+		The hue-rotate function applies a hue rotation (based on the color circle) to an image.
+	</p>
+	<p>
+		The function takes an angle of rotation as its parameter. The value of angle defines the number of degrees around the color circle the input samples will be adjusted.
+	</p>
+	<p>
+		When you use hue-rotate() to rotate the hue, you are rotating around this color circle.
+	</p>
+	<p>
+		If the image contains red color, which is at 0 degrees on the color circle, rotating the hue by 240deg will make the red color blue.
+	</p>
+	<p>
+		Here is an example of a hue rotation:
+	</p>
+	<code>
+		.huerotate {
+			filter: hue-rotate(180deg);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="huerotate" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		0 and 360deg rotations leave the image unchanged.
+	</p>
+	<br>
+	<h3>The invert Function</h3>
+	<p>
+		The invert function inverts the colors of an image to make dark areas bright and bright areas dark.
+		The function takes the proportion of the conversion as its parameter.
+	</p>
+	<p>
+		The parameter can be either a percentage value or a number.
+		0%invert leaves the image unchanged, whereas 100% creates a completely inverted image that is similar to a photographic negative.
+	</p>
+	<p>
+		Here is an example using a percentage value to make the image partially inverted:
+	</p>
+	<code>
+		.invertFilter{
+			filter: invert(70%);
+		}
+	</code>
+	<img class="original" src="http://www.sololearn.com/images/tree.jpg">
+	<img class="invertFilter" src="http://www.sololearn.com/images/tree.jpg">
+	<p>
+		The specification allows values over 100%, but that will have no further effect on the image.
+	</p>
+	
+</body>
+</html>
